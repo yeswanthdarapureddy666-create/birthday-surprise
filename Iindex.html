@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Secret Unlock</title>
+    <style>
+        body {
+            background: black;
+            color: lime;
+            text-align: center;
+            font-family: monospace;
+            margin-top: 100px;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            background: lime;
+            border: none;
+        }
+
+        #message {
+            display: none;
+            margin-top: 50px;
+            font-size: 30px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🔐 Scan Successful</h1>
+    <p>Click below to unlock the secret file...</p>
+
+    <button onclick="reveal()">UNLOCK</button>
+
+    <div id="message">
+        🎉 HAPPY BIRTHDAY 🎉 <br><br>
+        You are officially upgraded to <br>
+        <b>LEGEND VERSION 2.0</b> 🚀
+    </div>
+
+    <script>
+        function reveal() {
+            document.getElementById("message").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
